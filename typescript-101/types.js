@@ -14,3 +14,7 @@
 
 // Structural Root Primitive:
 // null : typeof instance === "object"
+
+const arrayTest = [1, 2, 3, 4];
+console.log(typeof arrayTest);
+// Array are objects in JS :)
