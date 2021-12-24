@@ -69,3 +69,25 @@ const you: {
   lastName: 'Perez',
   age: 25
 }
+
+// Although TS has an array type, usually you will define the type based on
+// what is inside the array, so for example an array of strings would be
+// the following: (stayedAt key on the following object is the example)
+
+const youTwo: {
+  firstName: string;
+  isReturning: boolean;
+  age: number;
+  lastName: string;
+  stayedAt: string[];
+} = {
+  firstName: 'Bobby',
+  isReturning: true,
+  lastName: 'Perez',
+  age: 25,
+  stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
+}
+
+// If you have more than 1 type inside the array you need an union types
+// stayedAt: (string | number)[];
+// stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow', 23]
