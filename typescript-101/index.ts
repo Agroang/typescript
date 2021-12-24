@@ -50,3 +50,22 @@ reviewCount(reviewNumber);
 // TS doesn't know what to expect from the parameters. At the same time we also
 // have to do it if the value of the variable has not been declared yet, like
 // let age (and if we hover it will say "type: any"
+
+// For type "object" you need to define the type of each of the keys that go
+// into the object itself (not really needed as TS inference exists, but it's
+// best practice and useful, it seems, in React)
+
+// Although it looks really like another object, each type is separated by a
+// semicolon instead of a comma like the actual object
+
+const you: {
+  firstName: string;
+  isReturning: boolean;
+  age: number;
+  lastName: string;
+} = {
+  firstName: 'Bobby',
+  isReturning: true,
+  lastName: 'Perez',
+  age: 25
+}
