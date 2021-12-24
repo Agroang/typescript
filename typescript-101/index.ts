@@ -43,7 +43,7 @@ reviewCount(reviewNumber);
 
 // To be able to actually use this the typescript compiler must be installed!
 
-// There is usually type interference in Typescript, so TS understand that for
+// There is usually type inference in Typescript, so TS understand that for
 // example const age = 23 will have the value of 23 (number) and that let age
 // = 23 will have a type of number as well, so we don't have to tell TS the type
 // of variable that it is in those cases. For functions we are doing it because
