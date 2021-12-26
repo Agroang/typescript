@@ -91,3 +91,20 @@ const youTwo: {
 // If you have more than 1 type inside the array you need an union types
 // stayedAt: (string | number)[];
 // stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow', 23]
+
+// Goof example of how to iterate through an array of objects, don't rely
+// all the time on forEach, sometimes a for loop can be really useful as you
+// get the "i" value for free (which serves as a counter for the index of
+// the array)
+
+//("properties" here is an array of objects)
+
+// for (let i = 0; i < properties.length; i++) {
+//   const card = document.createElement('div')            //create div element
+//   card.classList.add('card')                     //add de "card" class to it
+//   card.innerHTML = properties[i].title      //grabs the title of the index 0
+//   const image = document.createElement('img')           //create img element
+//   image.setAttribute('src', properties[i].image)         //set the src of it
+//   card.appendChild(image)                        //append the img to the div
+//   propertyContainer.appendChild(card)//append the card to the container(div)
+// }
