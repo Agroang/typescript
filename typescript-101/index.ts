@@ -121,3 +121,27 @@ const youTwo: {
 
 // The above, will take only 2 elements, the first one a number and the second
 // a string. That would be a tuple.
+
+// Enum Type (or "Enumerations") are quite a new data type supported in TS.
+// Enums help to be very specific about certain values that you can choose
+// and you can make your "own" Types with enums. Example:
+
+// const ADMIN = 'admin' // making Constants that have a value
+// const READ_ONLY = 'read-only'
+
+
+// enum Permissions { //use those constants as the options inside the type
+//                    Permissions
+//   ADMIN,
+//   READ_ONLY
+// }
+
+// const you = {
+//   firstName: 'Bobby',
+//   lastName: 'Brown',
+//   permissions: Permissions.ADMIN, //you can read those like an object and
+//                                   now permissions only accept type Permissions
+//   isReturning: true,
+//   age: 35,
+//   stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
+// }
