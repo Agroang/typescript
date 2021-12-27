@@ -108,3 +108,16 @@ const youTwo: {
 //   card.appendChild(image)                        //append the img to the div
 //   propertyContainer.appendChild(card)//append the card to the container(div)
 // }
+
+// Tuple Type: Allow you to express an array with a fixed number of elements
+// whose types are known (is not an array!). You define the number of elements
+// and the type of those elements, it follows that.
+// To make something a tuple type you would have to do as the following example:
+// (these are both inside an object, they are keys, the first as part of the
+// type declaration)
+
+// contact: [number, string];
+// contact: [+1123495082908, 'marywinkle@gmail.com'],
+
+// The above, will take only 2 elements, the first one a number and the second
+// a string. That would be a tuple.
