@@ -211,3 +211,10 @@ function add(firstValue: number, secondValue: number): number { // this last
   // number is saying that is a number to be returned from this function
   return firstValue + secondValue
 }
+
+// There is also a Void Type, which is different from the JS undefined. Some
+// functions do not return anything are just part of a something else, in those
+// cases what you are returning is void. If you try to set the type to undefined
+// you will get an error and the only way to avoid the error while keeping the
+// type of undefined would be to literally write at the end of the function:
+// return undefined.
