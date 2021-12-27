@@ -151,3 +151,12 @@ const youTwo: {
 // error as if you have a type already declared then you are expecting that type.
 // In any case, it's better to avoid using it unless really necesarry as it can
 // lead to bugs and errors.
+
+// With the Union Type you convine types as a certain value could have more than
+// one possible type, could it be an object, or an array, or number, etc. This
+// will still limit what you can use as you define exactly the types that are
+// expected. The syntax uses () and | (for the "or"):
+
+// function add(firstValue : (number | string),
+// secondValue: (number | string)) {} //first and second argument can only be a
+// number or a string
