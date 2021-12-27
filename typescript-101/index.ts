@@ -166,4 +166,41 @@ const youTwo: {
 
 // something :24, or something :'bob', so besides being a number, the number
 // must be 24. The same for the following, besides being a string, it has to
-// be the string 'bob'
+// be the string 'bob'.
+// It can be really useful when a standardization is needed, for example if we
+// only want a certain price to be available we could do the following:
+
+// (this is known as type Alias, creates a name to refer to these types bellow)
+// type Price = 45 | 30 | 25 //so this is the Literal, only accept the numbers
+// 45, 30, or 25
+// Then, inside the actual declaraction of type for the variable, we would add
+// this new type Alias, something like:
+
+// const properties: {
+//   image: string;
+//   title: string;
+//   price: Price; // Ofc it's also possible to put 45 | 30 | 25 directly here
+//   location: {
+//     firstLine: string;
+//     city: string;
+//     code: number;
+//     country: string;
+//   };
+//   contact: [number, string];
+//   isAvailable: boolean;
+// }[] = [
+//     {
+//       image: 'images/colombia-property.jpg',
+//       title: 'Colombian Shack',
+//       price: 45,
+//       location: {
+//         firstLine: 'shack 37',
+//         city: 'Bogota',
+//         code: 45632,
+//         country: 'Colombia'
+//       },
+//       contact: [+112343823978921, 'marywinkle@gmail.com'],
+//       isAvailable: true
+//     }
+
+//
