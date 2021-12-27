@@ -160,3 +160,10 @@ const youTwo: {
 // function add(firstValue : (number | string),
 // secondValue: (number | string)) {} //first and second argument can only be a
 // number or a string
+
+// Literal Types are the ones tha besides specifying a type (like string, number,
+// etc,), also specifies the value, something like:
+
+// something :24, or something :'bob', so besides being a number, the number
+// must be 24. The same for the following, besides being a string, it has to
+// be the string 'bob'
