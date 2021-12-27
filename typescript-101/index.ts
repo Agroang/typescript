@@ -145,3 +145,9 @@ const youTwo: {
 //   age: 35,
 //   stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
 // }
+
+// The Any Type is similar to vanilla javascript, and we use it mainly when
+// we don't know what kind of type to expect. This is to avoid a typechecking
+// error as if you have a type already declared then you are expecting that type.
+// In any case, it's better to avoid using it unless really necesarry as it can
+// lead to bugs and errors.
