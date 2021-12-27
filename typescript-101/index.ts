@@ -203,4 +203,11 @@ const youTwo: {
 //       isAvailable: true
 //     }
 
-//
+// There is also a Function Type in TS. Usually a function is expected to
+// return something and although TS inferences it's pretty much there to
+// infer that for you, you can also be literal and put it as well:
+
+function add(firstValue: number, secondValue: number): number { // this last
+  // number is saying that is a number to be returned from this function
+  return firstValue + secondValue
+}
