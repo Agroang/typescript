@@ -256,9 +256,9 @@ interface Bear extends Animal {
   honey: boolean
 }
 
-const bear = getBear()
-  bear.name
-  bear.honey
+// const bear = getBear()
+//   bear.name
+//   bear.honey
 
 // Adding new fields to an existing interface
 
@@ -266,13 +266,13 @@ interface Window {
   title: string
 }
 
-interface Window {
-  ts: TypeScriptAPI
-}
+// interface Window {
+//   ts: TypeScriptAPI
+// }
 
-const src = 'const a = "Hello World"';
-window.ts.transpileModule(src, {});
+// const src = 'const a = "Hello World"';
+// window.ts.transpileModule(src, {});
 
-// THe above add the ts field to Window.
+// The above add the ts field to Window.
 // This cannot be done with a Type alias, it will trow an error. In few words,
 // Interfaces are more fexible and can be modified.
