@@ -218,3 +218,8 @@ function add(firstValue: number, secondValue: number): number { // this last
 // you will get an error and the only way to avoid the error while keeping the
 // type of undefined would be to literally write at the end of the function:
 // return undefined.
+
+// If the function HAS a return inside, then there is no need to add the :void
+// as it is returning something, you could add exactly what is returning, like
+// defining all over again the contents as types, or put :any but that is not
+// really the best practice.
