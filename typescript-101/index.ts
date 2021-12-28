@@ -223,3 +223,56 @@ function add(firstValue: number, secondValue: number): number { // this last
 // as it is returning something, you could add exactly what is returning, like
 // defining all over again the contents as types, or put :any but that is not
 // really the best practice.
+
+// "Interfaces" in TS: In TypeScript, two types are compatible if their internal
+// structure is compatible. This allows us to implement an interface just by
+// having the shape the interface requires. An interface declaration is another
+// way to name an object type:
+
+interface Point {
+  x: number;
+  y: number;
+}
+
+interface Review {
+  name: string;
+  stars: number;
+  loyaltyUser: boolean;
+  date: string;
+}
+
+// Type aliases and interfaces are very similar, and in many cases you can
+// choose between them freely. Almost all features of an interface are available
+// in type, the key distinction is that a type cannot be re-opened to add new
+// properties vs an interface which is always extendable (inherit).
+
+// Extending an interface
+
+interface Animal {
+  name: string
+}
+
+interface Bear extends Animal {
+  honey: boolean
+}
+
+const bear = getBear()
+  bear.name
+  bear.honey
+
+// Adding new fields to an existing interface
+
+interface Window {
+  title: string
+}
+
+interface Window {
+  ts: TypeScriptAPI
+}
+
+const src = 'const a = "Hello World"';
+window.ts.transpileModule(src, {});
+
+// THe above add the ts field to Window.
+// This cannot be done with a Type alias, it will trow an error. In few words,
+// Interfaces are more fexible and can be modified.
