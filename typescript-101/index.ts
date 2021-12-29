@@ -296,3 +296,6 @@ interface Window {
 //         this.color = color
 //     }
 // }
+
+// for a JS class you only need the constructor (and not even the type
+// inside it declarations)
