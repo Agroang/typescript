@@ -281,3 +281,18 @@ interface Window {
 // so when you import it you don't have to put it in {} and you can name if
 // whatever you want. Regular exports must be in curly braces and need to have
 // the same name they had in the original file.
+
+// Defining a class in TS is a little bit different from JS as you need to
+// define the types as well:
+// class in TS bellow:
+
+// class Car {
+//     make: string
+//     year: number
+//     color: string
+//     constructor(make: string, year: number, color: string) {
+//         this.make = make
+//         this.year = year
+//         this.color = color
+//     }
+// }
