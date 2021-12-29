@@ -276,3 +276,8 @@ interface Window {
 // The above add the ts field to Window.
 // This cannot be done with a Type alias, it will trow an error. In few words,
 // Interfaces are more fexible and can be modified.
+
+// export default when there is only one thing that you are exporting
+// so when you import it you don't have to put it in {} and you can name if
+// whatever you want. Regular exports must be in curly braces and need to have
+// the same name they had in the original file.
