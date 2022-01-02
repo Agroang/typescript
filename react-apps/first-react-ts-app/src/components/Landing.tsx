@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Questionnaire from './components/Questionnaire';
+import Questionnaire from './Questionnaire';
+import Start from './Start';
 
 // have a true false state, on click change state to true, if true
 // conditional display the questionnaire component
@@ -13,10 +14,13 @@ export default function Landing() {
   }
 
   return (
-    <div>
-      <h1>El Questionator</h1>
-      <p>The hardest and awesomest questions ever!</p>
-      <button onClick={handleClick}>Start Quizzing</button>
-    </div>
+    { if (pageTrigger === true) {
+        return <Questionnaire />
+    } else {
+        <Start
+          handleClick={handleClick}
+        />}
+    }
   )
 }
+// state in react/typescript
