@@ -322,3 +322,6 @@ interface Window {
 //       (property) chargeVoltage ?: number
 //   console.log(str)
 // }
+
+// The guard is usually referred as "narrowing" and it is a type guard. Very
+// used in TS.
