@@ -299,3 +299,26 @@ interface Window {
 
 // for a JS class you only need the constructor (and not even the type
 // inside it declarations)
+
+// In TS you can have "optional" properties inside an object, which is different
+// from saying that a property may have the value, for example, of
+// number | undefined.
+// To make it an optional property we use the question mark (?)
+
+// function printCar(car: {
+//   make: string
+//   model: string
+//   year: number
+//   chargeVoltage?: number
+// }) {
+//   let str = `${car.make} ${car.model} (${car.year})`
+//   car.chargeVoltage
+// ------ This section over here is a guard, creating a branch if the value is
+// not undefined, meaning that it can only be a number
+//     (property) chargeVoltage ?: number | undefined
+//   if (typeof car.chargeVoltage !== "undefined")
+//     str += `// ${car.chargeVoltage}v`
+// ------
+//       (property) chargeVoltage ?: number
+//   console.log(str)
+// }
