@@ -330,3 +330,11 @@ interface Window {
 // like the Union Type uses the pipe | . Intersection only accept values that
 // include both A & B types, and is FAR less common than Union Types, but it's
 // good to know that they exist as you may find them around.
+
+// There is also a "Recursive Type":
+// Recursive types, are self - referential, and are often used to describe
+// infinitely nestable types (something like an array of numbers that can be
+// nested infinitely)
+
+// type NestedNumbers = number | NestedNumbers[] (defining it as a type alias)
+// this will take numbers or nested arrays of numbers
