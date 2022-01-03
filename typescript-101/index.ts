@@ -325,3 +325,8 @@ interface Window {
 
 // The guard is usually referred as "narrowing" and it is a type guard. Very
 // used in TS.
+
+// There is also an "Intersection Type" in TS that is represented with a &, just
+// like the Union Type uses the pipe | . Intersection only accept values that
+// include both A & B types, and is FAR less common than Union Types, but it's
+// good to know that they exist as you may find them around.
