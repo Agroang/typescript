@@ -341,3 +341,16 @@ interface Window {
 
 // void type means: the return value of this function should be ignored, and it
 // shouldn't be used anywhere else than in those situations.
+
+// when using "this" in TS you also need to define what "this" will be, even
+// if you know exactly what you are calling it on. So if it's part of a call
+// for an event handler, you need to write something like:
+
+// function clickHandler(
+//  this.HTMLButtonElement,
+//  event: Event
+// ) {
+//  this.disabled = true //this is actually what the function does
+// }
+
+// we can this a "this type"
