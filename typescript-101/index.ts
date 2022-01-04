@@ -338,3 +338,6 @@ interface Window {
 
 // type NestedNumbers = number | NestedNumbers[] (defining it as a type alias)
 // this will take numbers or nested arrays of numbers
+
+// void type means: the return value of this function should be ignored, and it
+// shouldn't be used anywhere else than in those situations.
