@@ -361,3 +361,37 @@ interface Window {
 // an error, in few words, it could take any value that is allowed in the JS
 // world but when you are using it you need to put type guards ( if (typeof ===
 // 'string') { do this }, else if (other types for example)).
+
+// The opposite of the "top types" are "button types" with the "never"
+// type. "never" type is very abstract and sometimes hard to grasp but in few
+// words what is saying is, if the options for any and unknown were pretty much
+// "everything" that was allowed in JS, the opposite goes for "never", something
+// that has a type of never, in few words, has the value of nothing. This is
+// used if you want to be exhaustive with your type guards. This is called
+// "exhaustive conditional", Let say you have a union type that can take the
+// value of one or another type, but in the type guard you can write the else
+// as never, so if it isn't one of the two, all what's left is nothing (never).
+
+// class Car {
+//   drive() {
+//     console.log("vroom")
+//   }
+// }
+// class Truck {
+//   tow() {
+//     console.log("dragging something")
+//   }
+// }
+// type Vehicle = Truck | Car
+
+// let myVehicle: Vehicle = obtainRandomVehicle()
+
+// // The exhaustive conditional
+// if (myVehicle instanceof Truck) {
+//   myVehicle.tow() // Truck
+// } else if (myVehicle instanceof Car) {
+//   myVehicle.drive() // Car
+// } else {
+//   // NEITHER!
+//   const neverValue: never = myVehicle
+// }
