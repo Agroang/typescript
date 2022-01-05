@@ -353,4 +353,5 @@ interface Window {
 //  this.disabled = true //this is actually what the function does
 // }
 
-// we can this a "this type"
+// we can this will be an HTMLButtonElement (is an event on
+// click on the <button>), so this would be the "this type"
