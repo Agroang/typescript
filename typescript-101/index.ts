@@ -395,3 +395,7 @@ interface Window {
 //   // NEITHER!
 //   const neverValue: never = myVehicle
 // }
+
+// You have the "nullish" types in TS that are null, undefined, and void.
+// void should only be used for functions! and it's when you want that the
+// return value to be ignored.
