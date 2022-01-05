@@ -355,3 +355,9 @@ interface Window {
 
 // we can this will be an HTMLButtonElement (is an event on
 // click on the <button>), so this would be the "this type"
+
+// In TS you "top types" that are "any" and "unknown", the difference between
+// these two is that unkwnoen MUST be used with type guards or it will give you
+// an error, in few words, it could take any value that is allowed in the JS
+// world but when you are using it you need to put type guards ( if (typeof ===
+// 'string') { do this }, else if (other types for example)).
