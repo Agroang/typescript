@@ -414,3 +414,7 @@ function listToDict<T>(
 // You can think of it as the parameter for the type (usually "T" is used),
 // and it will adapt the type to whichever is passed or used on the function
 // This is way better than mane the value an "any" for usability.
+
+// In the above example TypeScript will infer what T is, on a per-usage basis,
+// depending on what kind of array we pass in. If we use a string[], T will be
+// string, if we use a number[], T will be number.
