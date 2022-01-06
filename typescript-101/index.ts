@@ -418,3 +418,16 @@ function listToDict<T>(
 // In the above example TypeScript will infer what T is, on a per-usage basis,
 // depending on what kind of array we pass in. If we use a string[], T will be
 // string, if we use a number[], T will be number.
+
+// Generic Constraints: Generic constraints allow us to describe the “minimum
+// requirement” for a type param, such that we can achieve a high degree of
+// flexibility, while still being able to safely assume some minimal structure
+// and behavior. The way we define constraints on generics is by using the
+// "extends" keyword.
+// function listToDict<T extends HasId>(list: T[]): Dict<T> {
+// T extends HasId guarantees that “T is at least a HasId”.
+
+// The type params (from generics) also have a scope, so you have a function
+// within a function that started with 1 type param and you added another
+// inside the second function, the second function has access to the first
+// type param, in a similar fashion as variable or a regular parameter.
