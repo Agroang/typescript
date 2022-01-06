@@ -399,3 +399,18 @@ interface Window {
 // You have the "nullish" types in TS that are null, undefined, and void.
 // void should only be used for functions! and it's when you want that the
 // return value to be ignored.
+
+// "Generics" in TS allow us to parameterize types. The syntax looks like
+// <T> next to a function for example:
+
+function listToDict<T>(
+  list: T[],
+  idGen: (arg: T) => string
+): { [k: string]: T } {
+  const dict: { [k: string]: T } = {}
+  return dict
+}
+
+// You can think of it as the parameter for the type (usually "T" is used),
+// and it will adapt the type to whichever is passed or used on the function
+// This is way better than mane the value an "any" for usability.
